@@ -6,6 +6,17 @@
 
 Study Mate is a comprehensive web application designed to assist students in managing their academic tasks effectively. It provides features such as Test Score Tracker, Attendance Management with a calendar view, Expense Tracker, Deadline Reminders with recurring notifications, and secure user authentication using Firebase.
 
+## Technologies Used
+
+- **Frontend**:
+  - React for building the user interface.
+  - HTML/CSS for styling and structure.
+  - JavaScript for interactive functionalities.
+
+- **Backend**:
+  - Firebase for authentication.
+
+
 ## Installation Instructions
 
 1. Clone the Study Mate repository from GitHub.
