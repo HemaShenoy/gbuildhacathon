@@ -32,7 +32,7 @@ function App() {
     <Router>
       <div className="App">
         <header>
-          <h1>Welcome to StudyMate!</h1>
+          <h1>Welcome to studymate!</h1>
           <NavBar />
         </header>
         <main>
