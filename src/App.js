@@ -1,9 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import SignIn from './pages/login/loginpage'; // Adjust the import path for LoginPage
-import { getAuth, onAuthStateChanged } from 'firebase/auth'; // Correct import for Firebase auth
-import { app } from './firebase'; // Import the Firebase app instance
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
+import { app } from './firebase'; // Make sure to import your Firebase app instance correctly
 import './App.css';
-import Home from './pages/login/home.js'; // Import your Home component or any other component for authenticated users
+import Home from './pages/login/home'; // Adjust the import path for the Home component
+import SignIn from './pages/login/loginpage'; // Adjust the import path for the SignIn component
+import NavBar from './pages/login/navbar.js'; // Import your navigation bar component
+
+// Import other components for routings
+import TestScoreTracker from './pages/Testscoretracker.js';
+import AttendanceManagement from './pages/AttendanceManagement';
+import ExpenseTracker from './pages/ExpenseTracker';
+import DeadlineReminders from './pages/DeadlineReminders';
 
 const auth = getAuth(app);
 
@@ -21,14 +29,24 @@ function App() {
   }, []); // Empty dependency array to run the effect only once on mount
 
   return (
-    <div className="App">
-      <header>
-        <h1>Welcome!</h1>
-      </header>
-      <main>
-        {user ? <Home /> : <SignIn />} {/* Render different components based on authentication state */}
-      </main>
-    </div>
+    <Router>
+      <div className="App">
+        <header>
+          <h1>Welcome!</h1>
+          <NavBar />
+        </header>
+        <main>
+          <Routes>
+            {/* Define routes for other pages */}
+            <Route path="/" element={user ? <Home /> : <SignIn />} /> {/* Use "element" prop for rendering components */}
+            <Route path="/test-score-tracker" element={<TestScoreTracker />} />
+            <Route path="/attendance-management" element={<AttendanceManagement />} />
+            <Route path="/expense-tracker" element={<ExpenseTracker />} />
+            <Route path="/deadline-reminders" element={<DeadlineReminders />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
   );
 }
 
