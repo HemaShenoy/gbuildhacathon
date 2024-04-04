@@ -15,7 +15,8 @@ Study Mate is a comprehensive web application designed to assist students in man
 
 - **Backend**:
   - Firebase for authentication.
-  - React for building the user interface.
+  - react javascript.
+  
 
 
 ## Installation Instructions
