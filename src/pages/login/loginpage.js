@@ -14,10 +14,15 @@ function LoginPage() {
         signInWithPopup(auth, googleProvider)
             .then(() => {
                 setSuccess(true); // Set success to true after successful login
+                redirectToHome(); // Redirect to home page
             })
             .catch((error) => {
                 setError(error.message);
             });
+    };
+
+    const redirectToHome = () => {
+        window.location.href = '/home'; // Redirect to the home page
     };
 
     return (
