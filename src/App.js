@@ -3,7 +3,7 @@ import SignIn from './pages/login/loginpage'; // Adjust the import path for Logi
 import { getAuth, onAuthStateChanged } from 'firebase/auth'; // Correct import for Firebase auth
 import { app } from './firebase'; // Import the Firebase app instance
 import './App.css';
-import Home from './pages/hom/home'; // Import your Home component or any other component for authenticated users
+import Home from './pages/login/hom/home.js'; // Import your Home component or any other component for authenticated users
 
 const auth = getAuth(app);
 

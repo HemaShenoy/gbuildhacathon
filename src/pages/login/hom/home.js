@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { auth } from '../../firebase'; // Adjust the path based on your file structure
-import LoginPage from './LoginPage'; // Import your login page component
+import { auth } from './firebase'; // Adjust the path based on your file structure
+import LoginPage from './pages/login/loginpage.js'; // Import your login page component
 
 const Home = () => {
   const [user, setUser] = useState(null); // State to track user login status
