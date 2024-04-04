@@ -3,10 +3,12 @@ import React, { useState } from 'react';
 const ExpenseTracker = () => {
   const [expenses, setExpenses] = useState([]);
   const [newExpense, setNewExpense] = useState({ type: '', amount: 0 });
+  const [totalExpense, setTotalExpense] = useState(0);
 
   const addExpense = () => {
     if (newExpense.type && newExpense.amount > 0) {
       setExpenses([...expenses, newExpense]);
+      setTotalExpense(totalExpense + newExpense.amount);
       setNewExpense({ type: '', amount: 0 });
     }
   };
@@ -48,13 +50,17 @@ const ExpenseTracker = () => {
         <ul>
           {expenses.map((expense, index) => (
             <li key={index}>
-              {expense.type}: ${expense.amount}
+              {expense.type}: Rs{expense.amount}
             </li>
           ))}
         </ul>
+      </div>
+      <div>
+        <h3>Total Expenses: Rs{totalExpense}</h3>
       </div>
     </div>
   );
 };
 
 export default ExpenseTracker;
+
