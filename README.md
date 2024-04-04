@@ -1,70 +1,94 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Study Mate Web Application 
 
-In the project directory, you can run:
+## Introduction
 
-### `npm start`
+Study Mate is a comprehensive web application designed to assist students in managing their academic tasks effectively. It provides features such as Test Score Tracker, Attendance Management with a calendar view, Expense Tracker, Deadline Reminders with recurring notifications, and secure user authentication using Firebase.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation Instructions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the Study Mate repository from GitHub.
+2. Navigate to the project directory:
+   ```
+   cd C:\Users\HP\OneDrive\Desktop\SHENOY\gbuildhacathon
+   ```
+3. Install dependencies using npm:
+   ```
+   npm install
+   ```
+4. Configure Firebase for authentication and database services.
+5. Start the development server:
+   ```
+   npm start
+   ```
+6. Access the Study Mate web application at the specified URL.
 
-### `npm test`
+## Usage Instructions
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Login Page**:
+   - Use Firebase Authentication for secure user login.
+   - Uses Google sign-in.
+  
+ ![Screenshot (25)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/8721e04d-e8c8-4e70-8260-a74429b31d35)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Screenshot (26)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/360b1066-d5c3-4af5-961c-1e41ef4ae374)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ 
+  
+2. **Navigation Bar**:
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Screenshot (27)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/6d71a445-46cc-4042-8531-0a73ad954b85)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - **Test Score Tracker**:
+     - Record test scores for each course, including Internal marks obtained and external marks.
+     - View course-wise summaries of total marks .
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Screenshot (29)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/b2fa75f0-d8b6-4fd6-9a3e-1acdc2746ab8)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+   - **Attendance Management**:
+     - Mark attendance using the integrated calendar view.
+     - Track attendance  for each course.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+![Screenshot (30)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/e3d18aa0-e992-46cf-aaa4-a506b20bbe33)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Screenshot (32)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/c2d5ed64-5e69-4b39-bdcf-ed2481a4c2fa)
+![Screenshot (33)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/9038b3ad-fa0c-4317-be02-8e23cc2ec278)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   - **Expense Tracker**:
+     - Add different types of expenses (tuition fees, textbooks, etc.) with amounts and descriptions.
+     - Calculate and display total expenses and provide filtering options.
+    
+  ![Screenshot (34)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/5ea54a65-0f76-469c-84d0-6511b098819a)
+  ![Screenshot (35)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/21d01517-2783-4348-be0d-779f534bac1a)
 
-### Advanced Configuration
+   - **Deadline Reminders**:
+     - Set reminders for assignment deadlines, project submissions, and exam dates.
+     - Manage recurring reminders and receive notification alerts.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Screenshot (36)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/003b9363-f0b1-4ea5-a949-55120e1d8143)
 
-### Deployment
+![Screenshot (37)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/b947e101-29c7-49d5-93ca-fcbf210a5eba)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+3. **Sign Out Button**:
+   - Log out securely from the application.
+
+
+![Screenshot (39)](https://github.com/HemaShenoy/gbuildhacathon/assets/122464897/dabbaec2-6f9c-4557-b028-7fc19da55d4a)
+
+
+## Conclusion
+
+Study Mate is a robust web application designed to streamline academic tasks for students. By incorporating features such as Test Score Tracker, Attendance Management with a calendar view, Expense Tracker, and Deadline Reminders, students can stay organized and focused on their academic goals. The application leverages Firebase for secure authentication and real-time data management, ensuring a seamless user experience. We hope this documentation guides you through the installation, configuration, and effective usage of Study Mate to enhance your academic journey. Enjoy using Study Mate!
