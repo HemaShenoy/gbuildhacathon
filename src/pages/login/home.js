@@ -27,8 +27,7 @@ const Home = () => {
     <div>
       {user ? ( // If user is logged in, show home content
         <>
-          <h1>Welcome to the Home Page</h1>
-          <p>This is your home page content.</p>
+          
           <button onClick={handleSignOut}>Sign Out</button>
         </>
       ) : (

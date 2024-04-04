@@ -33,9 +33,9 @@ function App() {
       <div className="App">
         <header>
           <h1>Welcome to studymate!</h1>
-          <NavBar />
         </header>
         <main>
+          {user && <NavBar />} {/* Render NavBar only if user is logged in */}
           <Routes>
             {/* Define routes for other pages */}
             <Route path="/" element={user ? <Home /> : <SignIn />} /> {/* Use "element" prop for rendering components */}

@@ -1,39 +1,30 @@
 /* App.css */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
+/* Global styles */
 .App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f9f9f9;
 }
 
-
-
-main {
-  flex: 1;
+/* Header styles */
+header {
+  background-color: #0074d9;
+  color: white;
   padding: 20px;
 }
 
-/* Styles for vertical navigation bar (NavBar component) */
-.navbar {
-  display: flex;
-  flex-direction: column; /* Set to vertical layout */
-  background-color: #333; /* Change to your desired color */
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Navigation bar styles */
+.NavBar {
+  background-color: #333;
   color: white;
   padding: 10px;
 }
 
-.navbar a {
-  color: white;
-  text-decoration: none;
-  margin-bottom: 10px; /* Add spacing between links */
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
+/* Other component styles */
+/* Adjust styles for Home, SignIn, TestScoreTracker, AttendanceManagement, ExpenseTracker, and DeadlineReminders components as needed */
