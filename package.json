@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@firebase/analytics": "^0.10.2",
+    "@firebase/auth": "^1.7.0",
+    "@firebase/firestore": "^4.5.1",
+    "@firebase/storage": "^0.12.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
